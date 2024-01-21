@@ -44,23 +44,116 @@ AddEventHandler("Ranjit-EmsBag:Client:Giveweapon_flashlight", function()
     TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "weapon_flashlight", 1)
     TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["weapon_flashlight"], "add", 1)
 end)
-
-
+RegisterNetEvent('Ranjit-EmsBag:Client:Giveblood500ml')
+AddEventHandler("Ranjit-EmsBag:Client:Giveblood500ml", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Blood Pack 500ml ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "blood500ml", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["blood500ml"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givesaline500ml')
+AddEventHandler("Ranjit-EmsBag:Client:Givesaline500ml", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Saline Pack 500ml ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "saline500ml", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["saline500ml"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Giverevivekit')
+AddEventHandler("Ranjit-EmsBag:Client:Giverevivekit", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Revive Kit ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "revivekit", 1)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["revivekit"], "add", 1)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givetourniquet')
+AddEventHandler("Ranjit-EmsBag:Client:Givetourniquet", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Tourniquet ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "tourniquet", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["tourniquet"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givefield_dressing')
+AddEventHandler("Ranjit-EmsBag:Client:Givefield_dressing", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Field Dressing ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "field_dressing", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["field_dressing"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Giveelastic_bandage')
+AddEventHandler("Ranjit-EmsBag:Client:Giveelastic_bandage", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Elastic Bandage ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "elastic_bandage", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["elastic_bandage"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givequick_clot')
+AddEventHandler("Ranjit-EmsBag:Client:Givequick_clot", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Quick Clot ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "quick_clot", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["quick_clot"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givepacking_bandage')
+AddEventHandler("Ranjit-EmsBag:Client:Givepacking_bandage", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Packing Bandage ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "packing_bandage", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["packing_bandage"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givesewing_kit')
+AddEventHandler("Ranjit-EmsBag:Client:Givesewing_kit", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Sewing Kit ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "sewing_kit", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["sewing_kit"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Giveepinephrine')
+AddEventHandler("Ranjit-EmsBag:Client:Giveepinephrine", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Epinephrine ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "epinephrine", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["epinephrine"], "add", 5)
+end)
+RegisterNetEvent('Ranjit-EmsBag:Client:Givemorphine')
+AddEventHandler("Ranjit-EmsBag:Client:Givemorphine", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Getting Morphine ...")
+    TriggerServerEvent("Ranjit-EmsBag:Server:AddItem", "morphine", 5)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["morphine"], "add", 5)
+end)
 RegisterNetEvent('Ranjit-EmsBag:Client:MenuAmbulanceBag', function()
     local playerPed = PlayerPedId()
     if IsEntityDead(playerPed) then return Notify("You cannot Open Bag while dead", "error") end
     if IsPedSwimming(playerPed) then return Notify("You cannot Open Bag in the water.", "error") end
     if IsPedSittingInAnyVehicle(playerPed) then return Notify("You cannot Open Bag inside a vehicle", "error") end
     exports['qb-menu']:openMenu({
-        { header = "[🚑] Ambulance Box", txt = "", isMenuHeader = true },
-        { header = "[👜] Open AmbulanceBag",  params = { event = "Ranjit-EmsBag:Client:StorageAmbulanceBag" } },
-        { header = "[🩹]Take Bandage ",  params = { event = "Ranjit-EmsBag:Client:Givebandage" } },
-        { header = "[💊] Take Painkillers ",  params = { event = "Ranjit-EmsBag:Client:Givepainkillers" } },
-        { header = "[💉] Take Firstaid ",  params = { event = "Ranjit-EmsBag:Client:Givefirstaid" } },
-        { header = "[🔦] Take FlashLight ",  params = { event = "Ranjit-EmsBag:Client:Giveweapon_flashlight" } },
-        { header = "[📻] Take Radio",  params = { event = "Ranjit-EmsBag:Client:GiveRadio" } },
+        { header = "Ambulance Box", txt = "", isMenuHeader = true },
+        { header = "Open Ambulance Bag",  params = { event = "Ranjit-EmsBag:Client:StorageAmbulanceBag" } },
+        { header = "Take Blood Pack 500ml ",  params = { event = "Ranjit-EmsBag:Client:Giveblood500ml" } },
+        { header = "Take Saline Pack 500ml ",  params = { event = "Ranjit-EmsBag:Client:Givesaline500ml" } },
+        { header = "Take Revive Kit ",  params = { event = "Ranjit-EmsBag:Client:Giverevivekit" } },
+        { header = "Take Tourniquet ",  params = { event = "Ranjit-EmsBag:Client:Givetourniquet" } },
+        { header = "Take Field Dressing",  params = { event = "Ranjit-EmsBag:Client:Givefield_dressing" } },
+        { header = "Take Elastic Bandage",  params = { event = "Ranjit-EmsBag:Client:Giveelastic_bandage" } },
+        { header = "Take Quick Clot",  params = { event = "Ranjit-EmsBag:Client:Givequick_clot" } },
+        { header = "Take Packing Bandage",  params = { event = "Ranjit-EmsBag:Client:Givepacking_bandage" } },
+        { header = "Take Sewing Kit",  params = { event = "Ranjit-EmsBag:Client:Givesewing_kit" } },
+        { header = "Take Epinephrine",  params = { event = "Ranjit-EmsBag:Client:Giveepinephrine" } },
+        { header = "Take Morphine",  params = { event = "Ranjit-EmsBag:Client:Givemorphine" } },
+
         -- You can add more menus with your's personal events...
-        { header = "", txt = "❌ Close", params = { event = "qb-menu:closeMenu" } },
+        { header = "", txt = "Close", params = { event = "qb-menu:closeMenu" } },
     })
 end)
 
