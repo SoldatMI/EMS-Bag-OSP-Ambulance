@@ -14,7 +14,8 @@
 # Required
 Add this to **qb-core/shared/items.lua**
 ```
-      ["emsbag"]   	= {["name"] = "emsbag", 		["label"] = "emsbag", 			["weight"] = 150,["type"] = "item", ["image"] = "emsbag.png", 		["unique"] = false, ["useable"] = true,     ["shouldClose"] = true,    ["combinable"] = nil,  ["description"] = "Medical Bag"},
+    	["emsbag"]   					 = {["name"] = "emsbag", 						["label"] = "emsbag", 					["weight"] = 150, 		["type"] = "item", 		["image"] = "emsbag.png", 				["unique"] = false,   	["useable"] = true,     ["shouldClose"] = true,     ["combinable"] = nil, ["description"] = "Medical Bag"},
+
 	['tourniquet'] 					 = {['name'] = 'tourniquet', 					['label'] = 'Tourniquet', 				['weight'] = 10, 		['type'] = 'item', 		['image'] = 'tourniquet.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Stops bleeding by applying pressure to limbs'},
 	['field_dressing'] 				 = {['name'] = 'field_dressing', 				['label'] = 'Field Dressing', 			['weight'] = 10, 		['type'] = 'item', 		['image'] = 'field_dressing.png', 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Sterile bandage for covering wounds.'},
 	['elastic_bandage'] 			 = {['name'] = 'elastic_bandage', 				['label'] = 'Elastic Bandage', 			['weight'] = 10, 		['type'] = 'item', 		['image'] = 'elastic_bandage.png', 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true, 	['combinable'] = nil,  ['description'] = 'Stretchable bandage for compression and support.'},
