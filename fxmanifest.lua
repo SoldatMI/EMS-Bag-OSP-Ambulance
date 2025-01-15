@@ -8,7 +8,9 @@ github 'https://github.com/Ranjit-Develops'
 version '1.0.2'
 
 shared_scripts {
-    "configs/**.lua"
+    "configs/**.lua",
+    '@ox_lib/init.lua',
+    '@qbx_core/modules/lib.lua'
 }
 
 server_script {
@@ -26,11 +28,6 @@ escrow_ignore {
 
 files {
     'stream/prop_cs_shopping_bag.ydr'
-}
-
-dependencies {
-    'qb-core',
-    'qb-target'
 }
 
 lua54 'yes'
